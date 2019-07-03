@@ -1,0 +1,75 @@
+ToDoRandomizer app
+
+Name: SpinList
+
+Goal: help with decision fatigue and low motivation by randomly assigning a title from a simple list input by user
+
+Upon app launch:
+-print "Welcome to SpinList!"
+
+-on very first visit
+    -initialize taskList
+    -print "please enter your tasks, hitting enter after each one. When finished, pleae type "done" and hit enter"
+
+
+-on subsequent visits
+-print
+Main Menu - please type the number of your selection and press enter
+1. randomly present a task to complete
+2. input a new task
+3. mark an existing task complete
+
+    Option 1. randomly present a task to complete
+        -trigger output from existing ArrayList of all tasks (ArrayList of ArrayLists?)
+        -print task to console
+        -options:
+            1. mark this task complete
+                -moves task to ArrayList of completed tasks
+                -returns user to main menu
+            2. select a different task
+                -repeat steps from beginning of Option 1 above
+            3. return to main menu
+
+
+    Option 2. input a new task
+        -print "please type in your task and hit enter"
+        -add use input to ArrayList of tasks
+        -options:
+            1. add another task
+                -repeat steps from beginning of Option 2 above
+            2. return to main menu
+
+
+    Option 3. mark an existing task complete
+        -print "Please select the task you would like to mark complete and hit enter"
+        -print ArrayList of tasks (with number next to each? how to select?)
+        -user selection moves to ArrayList of completed tasks
+        -options:
+            1. mark another task complete
+                -repeat steps from beginning of Option 3 above"
+            2. return to main menu
+
+
+
+
+Feature add-on: Task Categories
+
+Add option to main menu:
+2. select a category to generate a task from
+
+Logic for this option:
+    Option 2.
+        -print "please choose a category"
+        -print all categories (with number next to each? how to select?)
+        -user inputs category selection
+        -trigger output from existing ArrayList of that category
+        -print task to console
+        -options:
+            1. mark this task complete
+                -moves task to ArrayList of completed tasks
+                -returns user to main menu
+            2. select a different task
+                -repeat steps from beginning of Option 1 above
+            3. return to main menu
+
+
